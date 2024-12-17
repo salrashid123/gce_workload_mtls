@@ -1,0 +1,7 @@
+{
+    "attestationRules": [
+       {
+          "googleCloudResource": "//compute.googleapis.com/projects/$PROJECT_NUMBER/type/Instance/attached_service_account.email/workload-1-sa@$PROJECT_ID.iam.gserviceaccount.com"
+       }
+    ]
+ }

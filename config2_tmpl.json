@@ -1,0 +1,26 @@
+{
+    "wc.compute.googleapis.com": {
+       "entries": {
+          "certificate-issuance-config": {
+             "primary_certificate_authority_config": {
+                "certificate_authority_config": {
+                   "ca_pool": "projects/$PROJECT_ID/locations/us-central1/caPools/s-pool-1"
+                }
+             },
+             "key_algorithm": "rsa-2048"
+          },
+          "trust-config": {
+             "workload-pool-test.global.708288290784.workload.id.goog": {
+                 "trust_anchors": [{
+                    "ca_pool": "projects/$PROJECT_ID/locations/us-central1/caPools/s-pool-1"
+                  }]
+             }
+       }
+    }
+    },
+    "iam.googleapis.com": {
+       "entries": {
+          "workload-identity": "spiffe://workload-pool-test.global.$PROJECT_NUMBER.workload.id.goog/ns/default-ns/sa/managed-identity-2"
+       }
+    }
+}
